@@ -145,7 +145,7 @@
 	    				$COLOR[1]=$PALETTE[$COLOR[1]+1];
 	    			}
 	    			else
-	    				returnFALSE;
+	    				return FALSE;
 	    			imagesetpixel($res,$X,$Y,$COLOR[1]);
 	    			$X++;
 	    			$P+=$BMP['bytes_per_pixel'];
@@ -154,7 +154,7 @@
 	    		$P+=$BMP['decal'];
 	    	}
 	    	fclose($f1);
-	    	return$res;
+	    	return $res;
 	    }
 	    
 	}
