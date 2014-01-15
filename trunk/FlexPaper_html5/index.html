@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>FlexPaper AdaptiveUI</title>                
+<meta name="viewport" content="initial-scale=1,user-scalable=0,width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <style type="text/css" media="screen"> 
+			html, body	{ height:100%; }
+			body { margin:0; padding:0; overflow:auto; }   
+			#flashContent { display:none; }
+        </style> 
+		
+		<link rel="stylesheet" type="text/css" href="css/flexpaper.css" />
+		<script type="text/javascript" src="js/jquery.min.js?131127"></script>
+		<script type="text/javascript" src="js/jquery.extensions.min.js?1311127"></script>
+		<script type="text/javascript" src="js/flexpaper.js?1311127"></script>
+		<script type="text/javascript" src="js/flexpaper_handlers_debug.js?444"></script>
+    </head> 
+    <body>  
+<div style="position:absolute;left:0px;top:0px;width:100%;height:100%;">
+			<div id="documentViewer" class="flexpaper_viewer" style="position:relative;width:80%;height:98%"></div>
+	        
+	        <script type="text/javascript">   
+		        function getDocumentUrl(document){
+					return "view.php?doc={doc}&format={format}&page={page}".replace("{doc}",document);	        
+		        }
+
+var td = (function(){try {return 'ontouchstart' in document.documentElement;} catch (e) {return false;} })();
+	        		if(td){$('#documentViewer').css({left : '0px', top: '0px', width:'99%',height:'90%'});}
+		         
+		        var startDocument = "Paper";
+	        
+				$('#documentViewer').FlexPaperViewer(
+						 { config : {
+						 
+						 DOC : escape(getDocumentUrl('UK_Investment_Fund.pdf')),
+						 key : '$659bda0e09811de23c6',
+						 Scale : 1.0, 
+						 ZoomTransition : 'easeOut',
+						 ZoomTime : 0.5, 
+						 ZoomInterval : 0.2,
+						 FitPageOnLoad : false,
+						 FitWidthOnLoad : false, 
+						 FullScreenAsMaxWindow : false,
+						 ProgressiveLoading : false,
+						 MinZoomSize : 0.2,
+						 MaxZoomSize : 5,
+						 MixedMode : true,
+						 SearchMatchAll : false,
+						 InitViewMode : 'Portrait',
+						 RenderingOrder : 'html5,flash',
+						 StickyTools : true,
+						 ViewModeToolsVisible : true,
+						 ZoomToolsVisible : true,
+						 NavToolsVisible : true,
+						 CursorToolsVisible : true,
+						 SearchToolsVisible : true,
+  						
+  						 localeChain: 'zh_CN'
+						 }});
+	        </script>  
+        </div>
+<div id="infobox" style="position:absolute; left:83%; top:20px; font-size:15px;font-family:'District Thin', helvetica, arial;width:200px;font-weight:lighter;">
+	You are currently viewing this document using HTML5 <br/><br/><font style='color:#f06528'>Did you know that our viewer chooses the best suitable format if the browser is unable to use HTML5? </font><br/><br/>See our comparison of these technologies <a href='http://flexpaper.devaldi.com/docs_html_flash_html5.jsp?prefer=true'>in our documentation</a>.	</div>
+
+<script type="text/javascript">
+if(td){$('#infobox').hide();}
+ 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-10148899-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.devaldi.com/piwik/" : "http://www.devaldi.com/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://www.devaldi.com/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+   </body> 
+</html>

@@ -1,0 +1,4 @@
+cmd
+执行
+"C:\Program Files\nodejs\node.exe" D:\xampp\htdocs\2014\udrawig
+uess\app.js
