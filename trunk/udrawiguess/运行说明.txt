@@ -1,3 +1,7 @@
 cmd
+
+定位到程序目录
 执行
+npm install
+然后执行
 "C:\Program Files\nodejs\node.exe" D:\xampp\htdocs\2014\udrawiguess\app.js
