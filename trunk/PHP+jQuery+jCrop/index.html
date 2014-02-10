@@ -171,7 +171,7 @@ $(function() {
 					if( msg.result_code == 1 ){
 						$('html,body').animate({scrollTop:$('#avatar').offset().top-150},1000,'swing',function(){
 							$('#avatar_msg').show();
-							$('#avatar').attr('src',msg.result_des.small);
+							$('#avatar').attr('src',msg.result_des.small + '?' + parseInt(new Date().valueOf()/1000));
 						});
 					} else {
 						alert("失败，傻逼铁道部");
